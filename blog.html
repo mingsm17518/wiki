@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tailes</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap -->
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/docs.css" rel="stylesheet">
+
+    <!-- bootstrap-icons -->
+
+    <link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+
+    <!-- media css -->
+
+    <link rel="stylesheet" href="static/css/media.css">
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+
+    <div id="loader"></div>
+
+    <!--header------------------------------------------------------------->
+
+    <!-- nav-top -->
+    <nav class="navbar navbar-top px-5">
+        <div class="col-10">
+            <a class="navbar-brand" href="#">Have a question? Call us +0089 74 568 921</a>
+        </div>
+        <div class="col-2">
+            <div class="d-flex justify-content-end">
+                <a class="navbar-brand text-uppercase m-0" href="#">FB <span>TW</span> IG</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav-bottom -->
+    <div class="bg" style="background-color: #333;">
+        <div class="row" style="margin: 0 3rem;">
+            <span class="border-top" style="border-color: #424242 !important;"></span>
+        </div>
+    </div>
+    <nav class="navbar navbar-bottom py-0 px-5 w-100 z-3">
+        <div class="col-2">
+            <a href="index.html">
+                <img src="static/picture/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="col-7 d-flex justify-content-center align-items-center text-uppercase">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+            <!-- Dropdown start -->
+            <div class="dropdown">
+                <a class="btn border-0 dropdown-toggle" role="button">
+                    Pages<i class="bi bi-chevron-down ms-2"></i>
+                </a>
+                <ul class="dropdown-menu py-0">
+                    <li><a class="dropdown-item px-2 py-3" href="team.html">Our team</a></li>
+                    <li><a class="dropdown-item px-2 py-3" href="faq.html">Faq</a></li>
+                    <li><a class="dropdown-item px-2 py-3" href="gallery.html">Gallery</a></li>
+                    <li><a class="dropdown-item px-2 py-3" href="error.html">404 error</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown end -->
+
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="" style="color: #cec8b2;">Blog</a>
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+        </div>
+        <div class="col-3 nav-bottom-input d-flex justify-content-end">
+            <input class="border-0" type="search" placeholder="search...">
+            <a href="search.html" class="btn border-0"><i class="bi bi-search "></i></a>
+        </div>
+    </nav>
+
+
+    <!-- offcanvas -->
+
+
+    <button class="btn modal-btn position-absolute border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i class="bi bi-list fs-2" style="color: #cec8b2;"></i>
+    </button>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn border-0 modal-search" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <i class="bi bi-search" style="color: #cec8b2;"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <input class="border-0 w-100" type="search" placeholder="search..." style="outline: 0;">
+                    <a href="search.html" class="btn border-0"><i class="bi bi-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a class="nav-link active me-5" aria-current="page" href="index.html">Home</a>
+            <!-- dropdown start-->
+            <div class="dropdown">
+                <span>Pages</span>
+                <a class="btn border-0 p-0 my-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-chevron-down ms-5"></i>
+                </a>
+                <ul class="dropdown-menu border-0 py-0" style="transform: translate(-37rem, 52px) !important;">
+                    <li><a class="dropdown-item py-3" href="team.html">Our team</a></li>
+                    <li><a class="dropdown-item py-3" href="faq.html">Faq</a></li>
+                    <li><a class="dropdown-item py-3" href="gallery.html">Gallery</a></li>
+                    <li><a class="dropdown-item py-3" href="error.html">404 error</a></li>
+                </ul>
+            </div>
+            <!-- dropdown end -->
+            <a class="nav-link active me-5" aria-current="page" href="about.html">About</a>
+            <a class="nav-link active me-5 my-4" aria-current="page" href="" style="color: #cec8b2;">Blog</a>
+            <a class="nav-link active me-5" aria-current="page" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <!--main------------------------------------------------------------->
+
+    <main>
+
+        <!-- blog -->
+
+        <section class="top">
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="text">
+                            <h2 class="text-capitalize">Blog</h2>
+                            <div class="d-flex justify-content-center py-2">
+                                <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+                                <p class="m-0 py-1"><span class="mx-1">/</span>Blog</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- blog-banner -->
+
+        <section class="blog py-5 my-3">
+            <div class="container">
+                <div class="row py-5 my-3">
+                    <div class="col-4 blog-sec pe-5">
+                        <form>
+                            <div class="row border-bottom">
+                                <div class="col-9">
+                                    <input class="me-2 border-0 w-100 h-100" type="search" placeholder="" required="">
+                                </div>
+                                <div class="col-3">
+                                    <a href="search.html" class="btn blog-icon border-0" style="background-color: transparent; color: #cec8b2; font-size: 18px;"><i class="bi bi-search"></i></a>
+                                </div>
+                            </div>
+                        </form>
+                        <h3 class="my-4">Recent Posts</h3>
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="blog1.html">
+                                    <img src="static/picture/blog-01.jpg" alt="" class="blog-img-side">
+                                </a>
+                            </div>
+                            <div class="col-9 px-1">
+                                <a href="blog1.html" class="text-decoration-none">
+                                    <h5>Reasons Why Marble is so Popular for Flooring</h5>
+                                </a>
+                                <p style="color: #cec8b2;">August 12, 2024</p>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <a href="blog2.html">
+                                    <img src="static/picture/blog-02.jpg" alt="" class="blog-img-side">
+                                </a>
+                            </div>
+                            <div class="col-9 px-1">
+                                <a href="blog2.html" class="text-decoration-none">
+                                    <h5>Care Tips To Keep Those Tiles Shining</h5>
+                                </a>
+                                <p style="color: #cec8b2;">August 12, 2024</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="blog3.html">
+                                    <img src="static/picture/blog-03.jpg" alt="" class="blog-img-side">
+                                </a>
+                            </div>
+                            <div class="col-9 px-1">
+                                <a href="blog3.html" class="text-decoration-none">
+                                    <h5>A Simple Guide to Choosing Onyx Marble</h5>
+                                </a>
+                                <p style="color: #cec8b2;">August 12, 2024</p>
+                            </div>
+                        </div>
+                        <h3 class="mt-4 mb-3">Recent Comments</h3>
+                        <h5>No comments to show.</h5>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="part">
+                                <a href="blog1.html">
+                                    <div class="img">
+                                        <div class="blog-img">
+                                            <img src="static/picture/blog-01.jpg" alt="" class="object-fit-cover">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="info my-3">
+                                    <a href="blog1.html" class="text-decoration-none">
+                                        <h3>Reasons Why Marble ...</h3>
+                                    </a>
+                                    <p class="m-0 my-3" style="color: #cec8b2;">August 12, 2024</p>
+                                    <p style="color: #000;">I must explain to you how all this mistaken idea of <br>
+                                        denouncing pleasure and praising…</p>
+                                    <a class="btn border-0 p-0 text-uppercase border-bottom border-dark" href="blog1.html" role="button" style="background-color: transparent; color: #000;">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="part my-4">
+                                <a href="blog3.html">
+                                    <div class="img">
+                                        <div class="blog-img">
+                                            <img src="static/picture/blog-03.jpg" alt="" class="object-fit-cover">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="info my-3">
+                                    <a href="blog3.html" class="text-decoration-none">
+                                        <h3>A Simple Guide to Ch...</h3>
+                                    </a>
+                                    <p class="m-0 my-3" style="color: #cec8b2;">August 12, 2024</p>
+                                    <p style="color: #000;">dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore…</p>
+                                    <a class="btn border-0 p-0 text-uppercase border-bottom border-dark" href="blog3.html" role="button" style="background-color: transparent; color: #000;">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="part">
+                                <a href="blog5.html">
+                                    <div class="img">
+                                        <div class="blog-img">
+                                            <img src="static/picture/blog-05.jpg" alt="" class="object-fit-cover">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="info my-3">
+                                    <a href="blog5.html" class="text-decoration-none">
+                                        <h3>All You Need To Know...</h3>
+                                    </a>
+                                    <p class="m-0 my-3" style="color: #cec8b2;">August 12, 2024</p>
+                                    <p style="color: #000;">Contrary to popular belief, Lorem Ipsum There are many
+                                        variations of passages of Lorem Ipsum…</p>
+                                    <a class="btn border-0 p-0 text-uppercase border-bottom border-dark" href="blog5.html" role="button" style="background-color: transparent; color: #000;">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="part">
+                                <a href="blog2.html">
+                                    <div class="img">
+                                        <div class="blog-img">
+                                            <img src="static/picture/blog-02.jpg" alt="" class="object-fit-cover">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="info my-3">
+                                    <a href="blog2.html" class="text-decoration-none">
+                                        <h3>Care Tips To Keep Those...</h3>
+                                    </a>
+                                    <p class="m-0 my-3" style="color: #cec8b2;">August 12, 2024</p>
+                                    <p style="color: #000;">consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut…</p>
+                                    <a class="btn border-0 p-0 text-uppercase border-bottom border-dark" href="blog2.html" role="button" style="background-color: transparent; color: #000;">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="part my-4">
+                                <a href="blog4.html">
+                                    <div class="img">
+                                        <div class="blog-img">
+                                            <img src="static/picture/blog-04.jpg" alt="" class="object-fit-cover">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="info my-3">
+                                    <a href="blog4.html" class="text-decoration-none">
+                                        <h3>How To Choose The Right...</h3>
+                                    </a>
+                                    <p class="m-0 my-3" style="color: #cec8b2;">August 12, 2024</p>
+                                    <p style="color: #000;">There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have in…</p>
+                                    <a class="btn border-0 p-0 text-uppercase border-bottom border-dark" href="blog4.html" role="button" style="background-color: transparent; color: #000;">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="part">
+                                <a href="blog6.html">
+                                    <div class="img">
+                                        <div class="blog-img">
+                                            <img src="static/picture/blog-06.jpg" alt="" class="object-fit-cover">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="info my-3">
+                                    <a href="blog6.html" class="text-decoration-none">
+                                        <h3>A Detailed Guide On T...</h3>
+                                    </a>
+                                    <p class="m-0 my-3" style="color: #cec8b2;">August 12, 2024</p>
+                                    <p style="color: #000;">There are many variations of passages of Lorem Ipsum
+                                        available majority Simply dummy text of…</p>
+                                    <a class="btn border-0 p-0 text-uppercase border-bottom border-dark" href="blog6.html" role="button" style="background-color: transparent; color: #000;">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer------------------------------------------------------------->
+    <footer>
+        <div class="footer pt-5">
+            <div class="container">
+                <div class="row py-5 mb-5">
+                    <div class="col-3 footer-top">
+                        <a href="index.html">
+                            <img src="static/picture/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="list-group-item">Arp-48 Mor Street, Brooklyn, <br> NY 11201, UK</li>
+                            <li class="list-group-item mt-4 mb-3"><a href="index.html" class="text-decoration-none text-capitalize">info@example.com</a></li>
+                            <li class="list-group-item"><a href="index.html" class="text-decoration-none">+1 558
+                                    989
+                                    9987</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="list-group-item"><a href="about.html" class="text-decoration-none">About
+                                    Us</a>
+                            </li>
+                            <li class="list-group-item my-3"><a href="index.html" class="text-decoration-none">History</a></li>
+                            <li class="list-group-item"><a href="faq.html" class="text-decoration-none">FAQ</a>
+                            </li>
+                            <li class="list-group-item my-3"><a href="" class="text-decoration-none">Blog</a>
+                            </li>
+                            <li class="list-group-item"><a href="contact.html" class="text-decoration-none">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 bottom-input">
+                        <div class="area">
+                            <form onclick="validate()">
+                                <input class="p-2 w-100" id="email" type="email">
+                                <button type="submit" class="btn text-uppercase mt-3">Subscribe</button>
+                                <div id="error" class="text-white fs-5 fw-semibold mt-3"></div>
+                                <div id="successful" class="text-white fs-5 fw-semibold mt-3"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="border-top" style="border-color: #424242 !important;"></span>
+                    <div class="col-12 d-flex justify-content-center py-2">
+                        <p class="my-3">Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="fix-btn">
+                <a href="#" class="btn position-fixed">
+                    <i class="bi bi-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/jquery.min.js"></script>
+    
+    <!-- bootstrap  js  -->
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        // loader js 
+
+          $('#loader').show();
+
+        setTimeout(function () {
+            $('#loader').fadeOut('slow', function () {
+                $('#content').fadeIn('slow');
+            });
+        }, 1000);
+
+        // validate
+
+        function validate() {
+            event.preventDefault();
+
+            document.getElementById("error").innerHTML = "";
+            document.getElementById("successful").innerHTML = "";
+
+            var email = document.getElementById("email").value;
+            var errorElement = document.getElementById("error");
+            var successElement = document.getElementById("successful");
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email === '') {
+                errorElement.innerHTML = "Please enter your email.";
+                return false;
+            }
+            else if (!emailPattern.test(email)) {
+                errorElement.innerHTML = "Please enter a valid email address.";
+                return false;
+            }
+            else {
+                successElement.innerHTML = "Thank you for subscribing!";
+                return false;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

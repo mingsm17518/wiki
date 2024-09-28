@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Tips To Keep Those Tiles Shining</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap -->
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/docs.css" rel="stylesheet">
+
+    <!-- bootstrap-icons -->
+
+    <link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+
+    <!-- media css -->
+
+    <link rel="stylesheet" href="static/css/media.css">
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+
+    <div id="loader"></div>
+
+    <!--header------------------------------------------------------------->
+
+    <!-- nav-top -->
+    <nav class="navbar navbar-top px-5">
+        <div class="col-10">
+            <a class="navbar-brand" href="#">Have a question? Call us +0089 74 568 921</a>
+        </div>
+        <div class="col-2">
+            <div class="d-flex justify-content-end">
+                <a class="navbar-brand text-uppercase m-0" href="#">FB <span>TW</span> IG</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav-bottom -->
+    <div class="bg" style="background-color: #333;">
+        <div class="row" style="margin: 0 3rem;">
+            <span class="border-top" style="border-color: #424242 !important;"></span>
+        </div>
+    </div>
+    <nav class="navbar navbar-bottom py-0 px-5 w-100 z-3">
+        <div class="col-2">
+            <a href="index.html">
+                <img src="static/picture/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="col-7 d-flex justify-content-center align-items-center text-uppercase">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+            <!-- Dropdown start -->
+            <div class="dropdown">
+                <a class="btn border-0 dropdown-toggle" role="button">
+                    Pages<i class="bi bi-chevron-down ms-2"></i>
+                </a>
+                <ul class="dropdown-menu py-0">
+                    <li><a class="dropdown-item px-2 py-3" href="team.html">Our team</a></li>
+                    <li><a class="dropdown-item px-2 py-3" href="faq.html">Faq</a></li>
+                    <li><a class="dropdown-item px-2 py-3" href="gallery.html">Gallery</a></li>
+                    <li><a class="dropdown-item px-2 py-3" href="error.html">404 error</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown end -->
+
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+        </div>
+        <div class="col-3 nav-bottom-input d-flex justify-content-end">
+            <input class="border-0" type="search" placeholder="search...">
+            <a href="search.html" class="btn border-0"><i class="bi bi-search "></i></a>
+        </div>
+    </nav>
+
+
+    <!-- offcanvas -->
+
+
+    <button class="btn modal-btn position-absolute border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i class="bi bi-list fs-2" style="color: #cec8b2;"></i>
+    </button>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn border-0 modal-search" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <i class="bi bi-search" style="color: #cec8b2;"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <input class="border-0 w-100" type="search" placeholder="search..." style="outline: 0;">
+                    <a href="search.html" class="btn border-0"><i class="bi bi-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a class="nav-link active me-5" aria-current="page" href="index.html">Home</a>
+            <!-- dropdown start-->
+            <div class="dropdown">
+                <span>Pages</span>
+                <a class="btn border-0 p-0 my-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-chevron-down ms-5"></i>
+                </a>
+                <ul class="dropdown-menu border-0 py-0" style="transform: translate(-37rem, 52px) !important;">
+                    <li><a class="dropdown-item py-3" href="team.html">Our team</a></li>
+                    <li><a class="dropdown-item py-3" href="faq.html">Faq</a></li>
+                    <li><a class="dropdown-item py-3" href="gallery.html">Gallery</a></li>
+                    <li><a class="dropdown-item py-3" href="error.html">404 error</a></li>
+                </ul>
+            </div>
+            <!-- dropdown end -->
+            <a class="nav-link active me-5" aria-current="page" href="about.html">About</a>
+            <a class="nav-link active me-5 my-4" aria-current="page" href="blog.html">Blog</a>
+            <a class="nav-link active me-5" aria-current="page" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!--main------------------------------------------------------------->
+
+    <main class="overflow-x-hidden blog-top">
+
+        <!-- blog2 -->
+
+        <section class="blog-inner">
+            <div class="blog-img">
+                <img src="static/picture/blog-02.jpg" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <a href="uncategorized.html" class="uncategorized-btn text-decoration-none text-uppercase" style="background-color: #000; color: #ffff;">Uncategorized</a>
+                    <h2 class="my-4">Care Tips To Keep Those Tiles Shining</h2>
+                    <div class="part d-flex">
+                        <img src="static/picture/blog-inner.jpg" alt="" class="rounded-circle me-2">
+                        <a href="index.html" class="text-decoration-none" style="color: #cec8b2;">
+                            <p class="m-0">By Code4rest</p>
+                        </a>
+                        <p class="m-0"><span>August 12, 2024</span></p>
+                        <a href="index.html" class="text-decoration-none" style="color: #cec8b2;">
+                            <p class="m-0">0 Comments </p>
+                        </a>
+                    </div>
+                    <p class="mt-4 mb-0">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+                    <p class="my-4">There are many variations of passages of Lorem Ipsum available, but the majority
+                        have in
+                        some form, by injected humour, or randomised words which don’t look even slightly believable. If
+                        you
+                        are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing
+                        hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+                        predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- next -->
+
+        <section class="next">
+            <div class="container">
+                <div class="row border-bottom border-top py-5">
+                    <div class="col-6">
+                        <a href="blog3.html" class="text-decoration-none" style="color: #000;">
+                            <p class="icon mb-2 fw-bold text-uppercase" style="font-size: 13px;"><i class="bi bi-arrow-left me-2"></i>Previous</p>
+                            <p class="m-0">A Simple Guide to Choosing Onyx Marble</p>
+                        </a>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a href="blog1.html" class="text-decoration-none" style="color: #000;">
+                            <p class="icon mb-2 fw-bold text-uppercase" style="font-size: 13px;">Next<i class="bi bi-arrow-right ms-2"></i></p>
+                            <p class="m-0">Reasons Why Marble is so Popular for Flooring</p>
+                        </a>
+                    </div>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- reply -->
+
+        <section class="reply pt-3 pb-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <h3>Leave a Reply</h3>
+                    <form>
+                        <p>Your email address will not be published. Required fields are marked<span class="mx-2" style="color: #d54e21;">*</span></p>
+                        <label class="form-label">Comment<span class="mx-2" style="color: #d54e21;">*</span></label>
+                        <textarea class="px-2 border-1 w-100" style="border-color: #6f6f6f36; padding: .7rem 0 8rem;" required=""></textarea>
+                        <div class="row my-4" style="margin: 0;">
+                            <div class="col-4 px-0">
+                                <label class="form-label">Name<span class="mx-2" style="color: #d54e21;">*</span></label>
+                                <input class="p-2 border-1 border-bottom w-100" style="border-color: #6f6f6f36;" type="text" required="">
+                            </div>
+                            <div class="col-4 px-4">
+                                <label class="form-label">Emali<span class="mx-2" style="color: #d54e21;">*</span></label>
+                                <input class="p-2 border-1 border-bottom w-100" style="border-color: #6f6f6f36;" type="email" required="">
+                            </div>
+                            <div class="col-4 px-0">
+                                <label class="form-label">Website<span class="mx-2" style="color: #d54e21;">*</span></label>
+                                <input class="p-2 border-1 border-bottom w-100" style="border-color: #6f6f6f36;" type="text" required="">
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" required="">
+                            <label class="form-check-label">Save my name, email, and website in this
+                                browser for the next time I comment.</label>
+                        </div>
+                        <button type="submit" class="btn inner-btn text-uppercase">post
+                            comment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer------------------------------------------------------------->
+    <footer>
+        <div class="footer pt-5">
+            <div class="container">
+                <div class="row py-5 mb-5">
+                    <div class="col-3 footer-top">
+                        <a href="index.html">
+                            <img src="static/picture/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="list-group-item">Arp-48 Mor Street, Brooklyn, <br> NY 11201, UK</li>
+                            <li class="list-group-item mt-4 mb-3"><a href="index.html" class="text-decoration-none text-capitalize">info@example.com</a></li>
+                            <li class="list-group-item"><a href="index.html" class="text-decoration-none">+1 558
+                                    989
+                                    9987</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="list-group-item"><a href="about.html" class="text-decoration-none">About
+                                    Us</a>
+                            </li>
+                            <li class="list-group-item my-3"><a href="index.html" class="text-decoration-none">History</a></li>
+                            <li class="list-group-item"><a href="faq.html" class="text-decoration-none">FAQ</a>
+                            </li>
+                            <li class="list-group-item my-3"><a href="blog.html" class="text-decoration-none">Blog</a>
+                            </li>
+                            <li class="list-group-item"><a href="contact.html" class="text-decoration-none">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 bottom-input">
+                        <div class="area">
+                            <form onclick="validate()">
+                                <input class="p-2 w-100" id="email" type="email">
+                                <button type="submit" class="btn text-uppercase mt-3">Subscribe</button>
+                                <div id="error" class="text-white fs-5 fw-semibold mt-3"></div>
+                                <div id="successful" class="text-white fs-5 fw-semibold mt-3"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="border-top" style="border-color: #424242 !important;"></span>
+                    <div class="col-12 d-flex justify-content-center py-2">
+                        <p class="my-3">Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="fix-btn">
+                <a href="#" class="btn position-fixed">
+                    <i class="bi bi-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="static/js/jquery.min.js"></script>
+
+    <!-- bootstrap  js  -->
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        // loader js 
+
+          $('#loader').show();
+
+        setTimeout(function () {
+            $('#loader').fadeOut('slow', function () {
+                $('#content').fadeIn('slow');
+            });
+        }, 1000);
+
+        // validate
+
+        function validate() {
+            event.preventDefault();
+
+            document.getElementById("error").innerHTML = "";
+            document.getElementById("successful").innerHTML = "";
+
+            var email = document.getElementById("email").value;
+            var errorElement = document.getElementById("error");
+            var successElement = document.getElementById("successful");
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email === '') {
+                errorElement.innerHTML = "Please enter your email.";
+                return false;
+            }
+            else if (!emailPattern.test(email)) {
+                errorElement.innerHTML = "Please enter a valid email address.";
+                return false;
+            }
+            else {
+                successElement.innerHTML = "Thank you for subscribing!";
+                return false;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
